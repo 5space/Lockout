@@ -1,0 +1,20 @@
+name: Lockout
+version: '${project.version}'
+main: me.fivespace.lockout.Lockout
+api-version: 1.18
+description: Better version of SmallAnt's Lockout
+commands:
+  lostart:
+    description: Start the lockout game (overwrites current game)
+    usage: "/lostart"
+  loteam:
+    description: Choose your lockout team
+    usage: "/loteam <a, b>"
+  lostop:
+    description: End the lockout game
+    usage: "/lostop"
+    permission: lockout.stop
+  lofire:
+    description: Manually fire a task (in case it doesn't work)
+    usage: "/lofire"
+    permission: lockout.fire
